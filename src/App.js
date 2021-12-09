@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 import './App.css';
+import Homepage from './components/Homepage';
+import Sonic from './components/Sonic';
+import Bread from './components/Bread';
+import Junior from './components/Junior';
+import Roz from './components/Roz';
+import Pikachu from './components/Pikachu';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <BrowserRouter basename="/web-kids-zone">
+        <Routes>
+          <Route exact path="/" element={ <Homepage /> } />
+          <Route exact path="/places" element={ <Sonic/>}/>
+          <Route exact path="/shapes" element={ <Junior/>}/>
+          <Route exact path="/count" element={ <Roz/>}/>
+          <Route exact path="/abc" element={ <Pikachu
+        />}/>
+          <Route exact path="/animals" element={ <Bread/>}/>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
