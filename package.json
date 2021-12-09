@@ -2,6 +2,7 @@
   "name": "website-final",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://daniboi27.github.io/web-final",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
