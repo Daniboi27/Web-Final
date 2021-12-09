@@ -1,31 +1,39 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
-import Homepage from './components/Homepage';
-import Sonic from './components/Sonic';
-import Bread from './components/Bread';
-import Junior from './components/Junior';
-import Roz from './components/Roz';
-import Pikachu from './components/Pikachu';
-
+import Sonic from './images/sonic.svg';
+import Bread from './images/bread.svg';
+import Junior from './images/junior.svg';
+import Roz from './images/roz.svg';
+import Pikachu from './images/pikachu.svg';
+import Header from './images/header.svg';
+import Sider from './images/sider.svg';
+import Footer from './images/footer.svg';
 
 
 function App() {
   return (
     <div className="App">
-      
-      <BrowserRouter basename="/website-final">
-        <Routes>
-          <Route exact path="/" element={ <Homepage /> } />
-          <Route exact path="/Sonic" element={ <Sonic/>}/>
-          <Route exact path="/Junior" element={ <Junior/>}/>
-          <Route exact path="/Roz" element={ <Roz/>}/>
-          <Route exact path="/Pikachu" element={ <Pikachu
-        />}/>
-          <Route exact path="/Bread" element={ <Bread/>}/>
-
-        </Routes>
-      </BrowserRouter>
+      <div ClassName= "header">
+      <img src = { Header }/>
+      </div>
+      <div ClassName= "sider">
+      <img src = { Sider }/>
+      </div>
+      <div className= "ClassName">
+        <div ClassName="paint">
+          Daniel Emerson's <br/>
+          MS Paint Art Gallery:
+        </div>
+      <img src = { Pikachu }/>
+      <img src = { Junior }/>
+      <img src = { Roz }/>
+      <img src = { Bread }/>
+      <img src = { Sonic }/>
+      </div>
+      <div className= "footer">
+      <img src = { Footer }/>
+      </div>
     </div>
   );
 }
