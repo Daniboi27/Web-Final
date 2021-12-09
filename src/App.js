@@ -14,6 +14,9 @@ import Footer from './images/footer.svg';
 function App() {
   return (
     <div className="App">
+      <div ClassName= "background">
+      <img src = { Sider }/>
+      </div>
       <div ClassName= "header">
       <img src = { Header }/>
       </div>
