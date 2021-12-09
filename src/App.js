@@ -14,15 +14,15 @@ function App() {
   return (
     <div className="App">
       
-      <BrowserRouter basename="/web-kids-zone">
+      <BrowserRouter basename="/website-final">
         <Routes>
           <Route exact path="/" element={ <Homepage /> } />
-          <Route exact path="/places" element={ <Sonic/>}/>
-          <Route exact path="/shapes" element={ <Junior/>}/>
-          <Route exact path="/count" element={ <Roz/>}/>
-          <Route exact path="/abc" element={ <Pikachu
+          <Route exact path="/Sonic" element={ <Sonic/>}/>
+          <Route exact path="/Junior" element={ <Junior/>}/>
+          <Route exact path="/Roz" element={ <Roz/>}/>
+          <Route exact path="/Pikachu" element={ <Pikachu
         />}/>
-          <Route exact path="/animals" element={ <Bread/>}/>
+          <Route exact path="/Bread" element={ <Bread/>}/>
 
         </Routes>
       </BrowserRouter>
