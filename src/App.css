@@ -2,11 +2,6 @@
   padding: 0px;
   margin: 0px;
 }
-.background{
-  background-color: white;
-  border-radius: 15%;
-  color: rgb(139, 0, 0);
-}
 
 .navcontainer{
   background-color: rgb(139, 0, 0);
@@ -58,7 +53,7 @@ title{
 .ClassName{
   display: grid;
   flex-direction: row;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr;
   margin-top: -1050px;
   margin-left: 200px;
